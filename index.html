@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>timer V-01</title>
+  </head>
+  <body>
+    <div class="timer">
+      <div class="controls">
+        <input id="duration" value="30" />
+        <div>
+          <button id="start"><i class="fa-solid fa-play icon"></i></button>
+          <button id="pause"><i class="fa-solid fa-pause icon"></i></button>
+        </div>
+      </div>
+      <svg class="dial">
+        <circle
+          r="190"
+          cx="0"
+          cy="200"
+          fill="transparent"
+          stroke="#3908DF"
+          stroke-width="15"
+          transform="rotate(-90 100 100)"
+        />
+      </svg>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/9db875e131.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="timer.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
